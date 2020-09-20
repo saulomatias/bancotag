@@ -10,7 +10,7 @@ class Banks extends Component
     public function render()
     {
 
-        $banks = Bank::
+        $banks = Bank::all();
 
         return view('livewire.banks', [
             'banks' => $banks,
