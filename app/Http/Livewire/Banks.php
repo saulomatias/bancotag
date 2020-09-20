@@ -3,11 +3,17 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
+use App\Models\Bank;
 
 class Banks extends Component
 {
     public function render()
     {
-        return view('livewire.banks');
+
+        $banks = Bank::
+
+        return view('livewire.banks', [
+            'banks' => $banks,
+        ]);
     }
 }

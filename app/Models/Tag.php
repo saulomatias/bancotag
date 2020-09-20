@@ -11,4 +11,9 @@ class Tag extends Model
 
     protected $fillable = ['bank_id', 'cnpj', 'nome', 'agencia', 'conta', 'op', 'whatsapp', 'email'];
 
+    public function banks()
+    {
+        return $this->belongsTo('App\Models\Bank');
+    }
+
 }
